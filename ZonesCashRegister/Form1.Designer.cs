@@ -1,6 +1,6 @@
 ﻿namespace ZonesCashRegister
 {
-    partial class Form1
+    partial class electrokatLogoImage
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(electrokatLogoImage));
             this.totalButton = new System.Windows.Forms.Button();
             this.changeButton = new System.Windows.Forms.Button();
             this.receiptButton = new System.Windows.Forms.Button();
@@ -59,13 +59,16 @@
             this.shopAdTitleLabel = new System.Windows.Forms.Label();
             this.shopAdBodyLabel = new System.Windows.Forms.Label();
             this.shopAdNoteLabel = new System.Windows.Forms.Label();
-            this.adBox2 = new System.Windows.Forms.PictureBox();
+            this.adsBackLabel = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.adBox1 = new System.Windows.Forms.PictureBox();
+            this.adBox2 = new System.Windows.Forms.PictureBox();
             this.mapImage = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.adsBackLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.adBox2)).BeginInit();
+            this.sponsorLabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mapImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -425,17 +428,24 @@
             this.shopAdNoteLabel.Text = "**PLEASE DO NOT LURE\r\nDRACULOIDS TO THE\r\nSHOP! THIS MEANS\r\nYOU, FUN GHOUL!!!**";
             this.shopAdNoteLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // adBox2
+            // adsBackLabel
             // 
-            this.adBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.adBox2.Image = global::ZonesCashRegister.Properties.Resources.mgmkad;
-            this.adBox2.Location = new System.Drawing.Point(357, 140);
-            this.adBox2.Name = "adBox2";
-            this.adBox2.Size = new System.Drawing.Size(277, 407);
-            this.adBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.adBox2.TabIndex = 31;
-            this.adBox2.TabStop = false;
-            this.adBox2.Visible = false;
+            this.adsBackLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(17)))), ((int)(((byte)(27)))));
+            this.adsBackLabel.Location = new System.Drawing.Point(58, 128);
+            this.adsBackLabel.Name = "adsBackLabel";
+            this.adsBackLabel.Size = new System.Drawing.Size(588, 431);
+            this.adsBackLabel.TabIndex = 35;
+            this.adsBackLabel.Visible = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ZonesCashRegister.Properties.Resources.electrokatlogo;
+            this.pictureBox2.Location = new System.Drawing.Point(708, 548);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 36;
+            this.pictureBox2.TabStop = false;
             // 
             // adBox1
             // 
@@ -448,6 +458,18 @@
             this.adBox1.TabIndex = 30;
             this.adBox1.TabStop = false;
             this.adBox1.Visible = false;
+            // 
+            // adBox2
+            // 
+            this.adBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.adBox2.Image = global::ZonesCashRegister.Properties.Resources.mgmkad;
+            this.adBox2.Location = new System.Drawing.Point(357, 140);
+            this.adBox2.Name = "adBox2";
+            this.adBox2.Size = new System.Drawing.Size(277, 407);
+            this.adBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.adBox2.TabIndex = 31;
+            this.adBox2.TabStop = false;
+            this.adBox2.Visible = false;
             // 
             // mapImage
             // 
@@ -470,21 +492,25 @@
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
             // 
-            // adsBackLabel
+            // sponsorLabel
             // 
-            this.adsBackLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(17)))), ((int)(((byte)(27)))));
-            this.adsBackLabel.Location = new System.Drawing.Point(58, 128);
-            this.adsBackLabel.Name = "adsBackLabel";
-            this.adsBackLabel.Size = new System.Drawing.Size(588, 431);
-            this.adsBackLabel.TabIndex = 35;
-            this.adsBackLabel.Visible = false;
+            this.sponsorLabel.Font = new System.Drawing.Font("Tw Cen MT", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sponsorLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(17)))), ((int)(((byte)(27)))));
+            this.sponsorLabel.Location = new System.Drawing.Point(690, 649);
+            this.sponsorLabel.Name = "sponsorLabel";
+            this.sponsorLabel.Size = new System.Drawing.Size(136, 24);
+            this.sponsorLabel.TabIndex = 37;
+            this.sponsorLabel.Text = "Thanks to our sponsor";
+            this.sponsorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // electrokatLogoImage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(884, 687);
+            this.Controls.Add(this.sponsorLabel);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.adBox1);
             this.Controls.Add(this.adBox2);
             this.Controls.Add(this.adsBackLabel);
@@ -521,10 +547,11 @@
             this.Controls.Add(this.changeButton);
             this.Controls.Add(this.totalButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "electrokatLogoImage";
             this.Text = "TCM\'s Zone Supply Store";
-            ((System.ComponentModel.ISupportInitialize)(this.adBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mapImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -569,6 +596,8 @@
         private System.Windows.Forms.Label shopAdBodyLabel;
         private System.Windows.Forms.Label shopAdNoteLabel;
         private System.Windows.Forms.Label adsBackLabel;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label sponsorLabel;
     }
 }
 

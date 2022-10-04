@@ -13,7 +13,7 @@ using System.Media;
 
 namespace ZonesCashRegister
 {
-    public partial class Form1 : Form
+    public partial class electrokatLogoImage : Form
     {
         //global variables
         int pupPrice = 0;
@@ -32,7 +32,7 @@ namespace ZonesCashRegister
         SoundPlayer player1 = new SoundPlayer(Properties.Resources.clicksound);
         SoundPlayer player2 = new SoundPlayer(Properties.Resources.printsound);
         
-        public Form1()
+        public electrokatLogoImage()
         {
             InitializeComponent();
             //disabling buttons
