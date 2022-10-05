@@ -86,6 +86,21 @@ namespace ZonesCashRegister
                     totalButton.Text = "Calculate Total";
                     totalButton.ForeColor = Color.Black;
                 }
+
+                //see if values are over a certain amount (amt. in stock)
+                if (pupAmount > 100 || batAmount > 100 || raygunAmount > 80)
+                {
+                    totalButton.Text = "Sorry, not enough in stock";
+                    totalButton.ForeColor = Color.Red;
+                    changeButton.Enabled = false;
+                    subtotalOutput.Text = "";
+                    taxOutput.Text = "";
+                    totalOutput.Text = "";
+                    Refresh();
+                    Thread.Sleep(1500);
+                    totalButton.Text = "Calculate Total";
+                    totalButton.ForeColor = Color.Black;
+                }
             }
             catch
             {
@@ -132,6 +147,19 @@ namespace ZonesCashRegister
                     receiptButton.Enabled = false;
                     Refresh();
                     Thread.Sleep(1500);
+                    changeButton.Text = "Calculate Change";
+                    changeButton.ForeColor = Color.Black;
+                }
+                
+                //check if tendered amount is excessive
+                if (tendered > total + 200)
+                {
+                    changeButton.Text = "I don't have enough change for that";
+                    changeButton.ForeColor = Color.Red;
+                    tenderedInput.Text = "";
+                    changeOutput.Text = "";
+                    Refresh();
+                    Thread.Sleep(1000);
                     changeButton.Text = "Calculate Change";
                     changeButton.ForeColor = Color.Black;
                 }
@@ -234,10 +262,10 @@ namespace ZonesCashRegister
             totalOutput.Text = "";
             changeOutput.Text = "";
 
-            //clearing inputs
-            pupInput.Text = "";
-            raygunInput.Text = "";
-            batInput.Text = "";
+            //resetting inputs
+            pupInput.Text = "0";
+            raygunInput.Text = "0";
+            batInput.Text = "0";
             tenderedInput.Text = "";
 
             //disabling buttons
