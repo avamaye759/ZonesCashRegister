@@ -509,12 +509,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.ClientSize = new System.Drawing.Size(884, 687);
-            this.Controls.Add(this.sponsorLabel);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.adBox1);
             this.Controls.Add(this.adBox2);
+            this.Controls.Add(this.adBox1);
             this.Controls.Add(this.adsBackLabel);
             this.Controls.Add(this.mapImage);
+            this.Controls.Add(this.sponsorLabel);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.shopAdNoteLabel);
             this.Controls.Add(this.shopAdBodyLabel);
             this.Controls.Add(this.shopAdTitleLabel);

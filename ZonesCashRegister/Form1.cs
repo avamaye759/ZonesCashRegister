@@ -11,6 +11,13 @@ using static System.Resources.ResXFileRef;
 using System.Threading;
 using System.Media;
 
+//Created by Ava Mayer
+//September-October 2022
+/// Cash register simulation based on the Killjoys Universe created by Gerard Way,
+/// Shaun Simon, and Becky Cloonan. This program includes references to the comic
+/// series "Killjoys: National Anthem" and the album "Danger Days: The True Lives
+/// Of The Fabulous Killjoys" by My Chemical Romance.
+
 namespace ZonesCashRegister
 {
     public partial class electrokatLogoImage : Form
@@ -204,13 +211,13 @@ namespace ZonesCashRegister
                 receiptLabel.Text += $"\n   July 23, 2019";
                 Refresh();
                 Thread.Sleep(600);
-                receiptLabel.Text += $"\n\n   Power Pup               x {pupAmount = Convert.ToInt32(pupInput.Text)} - {pupPrice} C";
+                receiptLabel.Text += $"\n\n   Power Pup               x {pupAmount} - {pupPrice} C";
                 Refresh();
                 Thread.Sleep(600);
-                receiptLabel.Text += $"\n   Ray Gun                 x {raygunAmount = Convert.ToInt32(raygunInput.Text)} - {raygunPrice} C";
+                receiptLabel.Text += $"\n   Ray Gun                 x {raygunAmount} - {raygunPrice} C";
                 Refresh();
                 Thread.Sleep(600);
-                receiptLabel.Text += $"\n   ElectroKat Batteries    x {batAmount = Convert.ToInt32(batInput.Text)} - {batPrice} C";
+                receiptLabel.Text += $"\n   ElectroKat Batteries    x {batAmount} - {batPrice} C";
                 Refresh();
                 Thread.Sleep(600);
                 receiptLabel.Text += $"\n\n   Subtotal                {subtotal} C";
@@ -321,4 +328,15 @@ namespace ZonesCashRegister
             }
         }
     }
+    ///Some notes about references:
+    ///- Set in post-nuclear war California in 2019
+    ///- "Battery City" is a dystopian city run by a totalitarian government
+    ///- The Killjoys are rebels who escaped the city and now live in the desert
+    ///- Desert is divided into "Zones." The zones get more radioactive as you get farther from the city
+    ///- The Killjoys are constantly on the run from government assassins known as Draculoids 
+    ///- Primary weapon: rayguns powered by batteries
+    ///- "Power Pup" is canned "meat" (apparently it tastes horrible. don't ask what the meat is)
+    ///- The Killjoys all have nicknames- eg Fun Ghoul, Kobra Kid,
+    ///  Party Poison, Jet Star (those are the 4 main characters)
+    ///- Concerts and bike races are the Killjoy's favourite pastimes :)
 }
